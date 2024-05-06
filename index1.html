@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        function getCurrentDayAndTime() {
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const currentDate = new Date();
+    const currentDay = days[currentDate.getDay()]; 
+    const currentHour = currentDate.getHours();
+    const currentMinute = currentDate.getMinutes(); 
+    const currentSecond = currentDate.getSeconds(); 
+
+    // how to convert time in am pm
+    const message = `Today is : ${currentDay}. Current time is : ${currentHour} : ${currentMinute} : ${currentSecond}`;
+    console.log(message);
+}
+
+getCurrentDayAndTime();
+
+    </script>
+</body>
+</html>
